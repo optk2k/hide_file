@@ -1,6 +1,5 @@
 import base64
 import hashlib
-
 import pathlib
 import sys
 from typing import Annotated
@@ -37,7 +36,9 @@ def encryption(
     # шифруем данные
     if not pathlib.Path(file_to_encryption).exists():
         typer.secho(
-            f"{file_to_encryption} Файла не существует !", fg=typer.colors.RED, bg=typer.colors.BLACK
+            f"{file_to_encryption} Файла не существует !",
+            fg=typer.colors.RED,
+            bg=typer.colors.BLACK,
         )
         sys.exit()
     with open(file_to_encryption, "rb") as file:
@@ -58,7 +59,9 @@ def dencryption(
     # расшифровываем данные
     if not pathlib.Path(file_to_dencryption).exists():
         typer.secho(
-            f"{file_to_dencryption} Файла не существует !", fg=typer.colors.RED, bg=typer.colors.BLACK
+            f"{file_to_dencryption} Файла не существует !",
+            fg=typer.colors.RED,
+            bg=typer.colors.BLACK,
         )
         sys.exit()
     with open(file_to_dencryption, "rb") as file:
