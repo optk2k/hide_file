@@ -1,0 +1,12 @@
+[project]
+name = "hide-file"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "bcrypt>=4.3.0",
+    "cryptography>=44.0.2",
+    "pwinput>=1.0.3",
+    "typer>=0.15.2",
+]
