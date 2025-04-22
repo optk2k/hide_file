@@ -2,7 +2,9 @@
 
 Помощь
 >uv run python main.py --help
+
 >uv run python main.py encryption --help
+
 >uv run python main.py dencryption --help
 
 Зашифровать
