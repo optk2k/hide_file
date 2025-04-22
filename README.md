@@ -8,7 +8,7 @@
 >uv run python main.py dencryption --help
 
 Зашифровать
->uv run python main.py encryption -f /home/user/Видео/IMG_9100.MP4 -nn /tmp/file.enc
+>uv run python main.py encryption -f /home/user/file_to_encryption.txt -nn /home/user/encrypted_file.txt
 
 Расшифровать
->uv run python main.py dencryption -f /tmp/file.enc -nn ~/fake.MP4
+>uv run python main.py dencryption -f /home/user/encrypted_file.txt -nn /home/user/decrypted_file.txt
